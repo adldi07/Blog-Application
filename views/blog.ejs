@@ -29,13 +29,14 @@
             </form> 
         <% } %>
 
-        <!-- <div class="mt-3">
-            <% comments.forEach(comment => { %>
+        <div class="mt-3">
+            <% comments.forEach((comment,index) => { %>
                 <div>
-                    <img src="" alt="">
+                    <!-- <img src="comment.createdBy.profileImageURL" width="30px" alt="comment owner not found"> and we also can show name of comment owner -->
+                    <pre><%= index %>th user created a comment that is ... <%= comment.content %>.</pre>
                 </div>
             <% }) %>
-        </div> -->
+        </div>
         
     </div>
 
